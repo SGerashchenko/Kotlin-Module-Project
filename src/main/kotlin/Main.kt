@@ -1,3 +1,6 @@
+
 fun main(args: Array<String>) {
-    println("Hello World!")
+    println("Заметки 2024\nВыберите пункт меню\n")
+    start()
+    println("Всего хорошего!")
 }
