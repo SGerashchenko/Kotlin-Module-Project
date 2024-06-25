@@ -3,7 +3,7 @@ fun menuNotes(archive: Archives, numberArchive: Int) {
         val listOfIndexesNotes: List<Int> = Menu(archive.notes).showMenu()
         when (val getAnswer = UserInput().answer()) {
             0 -> createNote(numberArchive)
-            listOfIndexesNotes.size + 1 -> break
+            listOfIndexesNotes.size -> break
             in listOfIndexesNotes -> showText(archive.notes, getAnswer)
             else -> println("Такой цифры нет в меню")
         }
